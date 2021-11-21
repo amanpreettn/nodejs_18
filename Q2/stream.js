@@ -1,7 +1,7 @@
 const fs = require("fs");
-var data = "";
+let data = "";
 //create a readablestream
-var readerStream = fs.createReadStream("input.txt");
+let readerStream = fs.createReadStream("input.txt");
 
 // set encoding tobe urf-8
 readerStream.setEncoding("utf-8");
@@ -20,8 +20,8 @@ readerStream.on("error", function (err) {
 
 console.log("Program ended");
 
-var data='Hello world';
-var writeStream=fs.createWriteStream('output.txt');
+let data='Hello world';
+let writeStream=fs.createWriteStream('output.txt');
 
 writeStream.write(data,'utf-8');
 
